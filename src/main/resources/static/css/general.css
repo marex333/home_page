@@ -1,0 +1,24 @@
+/* landing.css */
+
+/* Set the background image */
+body {
+    background-image: url('/landing-background.jpeg'); /* Adjust the path to your image */
+    background-size: cover; /* Adjust the background size as needed */
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.landing-page .content {
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: right;
+    padding: 10px; /* Add padding to create space around the text */
+    box-sizing: border-box; /* Include padding and border in the width */
+    margin-right: 20px; /* Add margin to create space on the right side */
+}
