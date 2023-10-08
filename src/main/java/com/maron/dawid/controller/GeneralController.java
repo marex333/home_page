@@ -10,9 +10,9 @@ public class GeneralController {
     public String showLandingPage() {
         return mainPage();
     }
-    @GetMapping("/skills")
+    @GetMapping("/projects")
     public String showSkillsPage() {
-        return "my-skills";
+        return "projects";
     }
 
     @GetMapping("/about")

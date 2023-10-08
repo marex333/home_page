@@ -1,34 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing-page</title>
 
     <link rel="stylesheet" type="text/css" th:href="@{/css/general.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/landing.css}">
 </head>
 <body>
-<div class = "navigator">
-    <table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px">
-        <tbody>
-        <tr>
-            <td style="text-align:center; width:120px"><a href="/landing">HOME</a></td>
-            <td style="text-align:center; width:135px">MY PROJECTS</td>
-            <td style="text-align:center; width:118px"><a href="/skills">SKILLS</a></td>
-            <td style="text-align:center; width:103px"><a href="/about">ABOUT</a></td>
-            <td style="text-align:center; width:103px">CONTACT</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
 
-<h1 style="text-align:center">&nbsp;</h1>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="/landing">HOME</a>
+            </li>
+            <li>
+                <a href="/landing">MY PROJECTS</a>
+            </li>
+            <li>
+                <a href="/skills">SKILLS</a>
+            </li>
+            <li>
+                <a href="/about">ABOUT</a>
+            </li>
+            <li>
+                <a href="/landing">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-<h1 style="text-align:center"><span style="font-size:24px"><span style="font-family:Times New Roman,Times,serif"><em>Hi. I&#39;m Dawid and this is my web page.</em></span></span>
-</h1>
-</body>
+<main>
+    <!-- Introduction part -->
+    <section class="introduction">
+        <h2>Hi. I&#39;m Dawid and this is my web page.</h2>
+        <p>I work in a global software house as a part of R&D member.</p>
+        <p>Currently, I work with a team that focus on developing a billing system for our customers.</p>
+    </section>
+    <!-- Skills part -->
+    <section class="skills">
+        <h2 style="text-align:center;">Skills/Technology</h2>
+        <div class="skills-text">
+            <h3>Java</h3>
+            <p>Most of the time I do use Java as a main backend language. It was the first thing I started to learn to become software developer</p>
+        </div>
+        <div class="skills-text">
+            <h3>HTML</h3>
+            <p>I have almost no experience with it. This project is to make me used to it</p>
+        </div>
+        <div class="skills-text">
+            <h3>Docker</h3>
+            <p>I do use containers in the projects I do work on in my job. I understand the idea behind it, but I still need to get more grip on it</p>
+        </div>
+        <div class="skills-text">
+            <h3>Kubernetes</h3>
+            <p>I do use it as part of CI/CD in projects. It helps me mainly with testing my code in the preview environment</p>
+        </div>
+        <div class="skills-text">
+            <h3>SQL</h3>
+            <p>Just vague knowledge. I do mostly use it in PostgreSQL in the projects I work with</p>
+        </div>
+        <div class="skills-text">
+            <h3>Elasticsearch</h3>
+            <p>I do have some experience with working with it. I did already build some REST API queries. </p>
+        </div>
+        <div class="skills-text">
+            <h3>Kafka</h3>
+            <p>I did implement some code in the projects I work with to make it send some messages, however I still need to know how to base the whole application to make the best of use of it. </p>
+        </div>
+    </section>
+
+
+</main>
+
 <footer class="footer">
     <p>Author: Dawid Maroń</p>
     <p><a href="mailto:daw.maron.business@gmail.com">daw.maron.business@gmail.com</a></p>
 </footer>
+</body>
 </html>
