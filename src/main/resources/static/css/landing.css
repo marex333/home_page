@@ -2,12 +2,6 @@
     text-align: center;
 }
 
-main section{
-    padding: 20px; /* Add padding to create some space between the content and the border */
-    margin-bottom: 20px; /* Add margin to separate sections vertically */
-
-}
-
 /* Style the section headings */
 section h2 {
     font-size: 24px;

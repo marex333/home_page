@@ -7,6 +7,13 @@ body {
     background-image: url('/landing-background.jpeg');
     background-size: cover;
 }
+
+main section{
+    padding: 20px; /* Add padding to create some space between the content and the border */
+    margin-bottom: 20px; /* Add margin to separate sections vertically */
+
+}
+
 body text {
 
 }
@@ -23,7 +30,7 @@ nav {
     background-color: rgb(0, 0, 0, 0.5);
 }
 
-li {
+nav li {
     list-style-type: none;
     float: left;
 }
